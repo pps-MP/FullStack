@@ -85,6 +85,7 @@ echo $final;
 echo '<br>';
 
 // чек
+// yf gtxfnm
 echo '<br>';
 echo 'goods' . ' : ' . 'price' . '$ X ' . 'quantity' . ' = ' . 'sum' . '$';
 echo '<br>';
