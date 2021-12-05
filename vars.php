@@ -84,6 +84,7 @@ $final = $summ + $tea + $nds;
 echo $final;
 echo '<br>';
 
+// чек
 echo '<br>';
 echo 'goods' . ' : ' . 'price' . '$ X ' . 'quantity' . ' = ' . 'sum' . '$';
 echo '<br>';
