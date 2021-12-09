@@ -130,6 +130,7 @@ $person = [
     'city' => 'Milan',
     'language' => 'java']
 ];
+
 function sortByAge($a, $b){
     if ($a['age'] > $b['age']){
         return 1;   
@@ -170,15 +171,17 @@ if ($nOne > $nTwo){
     return -1;    
 } else{
     return 0;
-};
+}
 print_r($person);
 usort($person, 'SortByAge');
 print_r($person);
-*/
+
 echo '<hr>';
 
 $names = arrey_column($persons, 'name');
 
 print_r($names);
 
-array_multisort($name, sort)
+array_multisort($name);
+
+
