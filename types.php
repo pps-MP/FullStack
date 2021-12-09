@@ -50,5 +50,9 @@ $message2 = 'Значение переменной name = $name';
 echo $message2;
 echo '<br>';
 
-echo 'My name\'s Max <br>';  
+echo 'My name\'s Max <br>';
+
+
+
+
 
