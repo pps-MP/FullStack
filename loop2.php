@@ -47,3 +47,5 @@ while ($cel < 51){
     echo $cel . ' C = ' . round($far, 2) . ' F' . '<br>';
     $cel++;
 }
+
+
