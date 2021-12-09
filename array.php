@@ -50,7 +50,6 @@ $person = [ // ассоциативный массив
     'language' => 'php'
 ];
 $person['car'] = true; // добавляем ключ car и значение true (1) в массив
-$person[ = ''; // добавляем ключ car и значение true (1) в массив
 
 
 echo '<pre>';
@@ -59,3 +58,127 @@ print_r($person);
 unset($person['name']); // полностью удаляем ключ из массива
 echo '<pre>';
 print_r($person);
+
+
+echo '<hr>';
+
+$colors = ['red', 'green', 'blue'];
+$output = '';
+
+foreach ($colors as $colors){
+    $output = $output . ' ' . $colors;
+}
+
+echo $output;
+echo '<hr>';
+
+$string_colors = implode(', ', $colors);
+echo "$string_colors<br>";
+
+$new_str = 'предложение из 4 слов';
+$array = explode('парампампам', $new_str);
+
+print_r($array);
+
+$numbers = [2, 4, 6, 1, 3];
+print_r($numbers);
+
+sort($numbers);
+
+print_r($numbers);
+
+echo '<hr>';
+print_r($person);
+sort($person); // нельзя использовать для асоциативных массивов
+
+print_r($person);
+
+$person = [ // ассоциативный массив
+    'name' => 'Voo',
+    'age' => 30,
+    'city' => 'London',
+    'language' => 'php'
+];
+
+asort($person); // сортировка асоциативныых массивоов
+print_r($person);
+
+ksort($person);// сортировка по ключам
+print_r($person);
+
+rsort($numbers);// обратная сортировка
+print_r($numbers);
+
+krsort($person); // обратная сортировка по ключам
+print_r($person);
+
+echo '<hr>';
+
+$person = [
+    ['name' => 'Voo',
+    'age' => 30,
+    'city' => 'London',
+    'language' => 'php'
+    ],
+    ['name' => 'Doo',
+    'age' => 90,
+    'city' => 'Paris',
+    'language' => 'python'
+    ],
+    ['name' => 'Lola',
+    'age' => 18,
+    'city' => 'Milan',
+    'language' => 'java']
+];
+function sortByAge($a, $b){
+    if ($a['age'] > $b['age']){
+        return 1;   
+    } else if ($a['age'] < $b['age']){
+        return -1;    
+    } else{
+        return 0;
+    }
+}
+
+function sortBySity($a, $b){
+    if ($a['city'] > $b['city']){
+        return 1;   
+    } else if ($a['city'] < $b['city']){
+        return -1;    
+    } else{
+        return 0;
+    }
+}
+print_r($person);
+usort($person, 'SortByAge');
+print_r($person);
+
+function sortBySity($a, $b){
+    return $a['city'] <=> $b['city'];
+
+print_r($person);
+usort($person, 'SortByAge');
+print_r($person);
+
+echo '<hr>';
+$nOne = 10;
+$nTwo = 15;
+
+if ($nOne > $nTwo){
+    return 1;   
+} else if ($nOne < $nTwo){
+    return -1;    
+} else{
+    return 0;
+};
+print_r($person);
+usort($person, 'SortByAge');
+print_r($person);
+*/
+echo '<hr>';
+
+$names = arrey_column($persons, 'name');
+
+print_r($names);
+
+array_multisort($name, sort)
