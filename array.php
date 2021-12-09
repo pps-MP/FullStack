@@ -65,18 +65,17 @@ echo '<hr>';
 $colors = ['red', 'green', 'blue'];
 $output = '';
 
-foreach ($colors as $colors){
-    $output = $output . ' ' . $colors;
+foreach ($colors as $color){
+    $output = $output . ' ' . $color;
 }
-
-echo $output;
-echo '<hr>';
 
 $string_colors = implode(', ', $colors);
 echo "$string_colors<br>";
 
 $new_str = 'предложение из 4 слов';
-$array = explode('парампампам', $new_str);
+$array = explode(' ', $new_str);
+
+echo '<hr>';
 
 print_r($array);
 
@@ -114,6 +113,7 @@ print_r($person);
 
 echo '<hr>';
 
+
 $person = [
     ['name' => 'Voo',
     'age' => 30,
@@ -150,12 +150,14 @@ function sortBySity($a, $b){
         return 0;
     }
 }
+
 print_r($person);
 usort($person, 'SortByAge');
 print_r($person);
 
-function sortBySity($a, $b){
+function sortBySity_1($a, $b){
     return $a['city'] <=> $b['city'];
+    }
 
 print_r($person);
 usort($person, 'SortByAge');
